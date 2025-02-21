@@ -3,32 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student List & Seminar Schedule</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-        th, td {
-            border: 2px solid black; /* Keeping the original bold border */
-            padding: 8px;
-            text-align: center;
-        }
-        .left {
-            text-align: left;
-            font-weight: bold;
-        }
-    </style>
+    <title>Student List Table</title>
+    
 </head>
 <body>
 
-    <!-- Student List Table -->
-    <table>
+    <table border="1">
         <tr>
             <th rowspan="2">Heading</th>
             <th colspan="2">Students</th>
@@ -41,7 +21,7 @@
             <th>Roll Number</th>
         </tr>
         <tr>
-            <td rowspan="4" class="left">Student List</td>
+            <td rowspan="4">Student List</td>
             <td>1</td>
             <td>Victor</td>
             <td>Computer Science</td>
@@ -67,12 +47,20 @@
         </tr>
     </table>
 
-    <!-- Seminar Schedule Table -->
-    <table>
+
+ 
+
+   
+    
+    
+    <table border="1">
         <tr>
-            <th rowspan="2">Day</th>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
             <th colspan="2">Schedule</th>
-            <th rowspan="2">Seminar</th>
+            <th rowspan="2">Topic</th>
         </tr>
         <tr>
             <th>Begin</th>
@@ -80,37 +68,37 @@
         </tr>
         <tr>
             <td rowspan="2">Monday</td>
-            <td>8:00 a.m.</td>
-            <td>5:00 p.m.</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.m.</td>
             <td>Introduction to XML</td>
         </tr>
         <tr>
-            <td colspan="2"></td>
             <td>Validity: DTD and Relax NG</td>
         </tr>
         <tr>
-            <td rowspan="3">Tuesday</td>
+            <td rowspan="3">Tuesday</td> <!-- Tuesday spans 3 rows -->
             <td>8:00 a.m.</td>
             <td>11:00 a.m.</td>
-            <td>XPath</td>
+            <td rowspan="3" align="center">XPath<hr>XSL Transformation</td>
         </tr>
         <tr>
             <td>11:00 a.m.</td>
             <td>2:00 p.m.</td>
-            <td>XSL Transformations</td>
+           
         </tr>
         <tr>
             <td>2:00 p.m.</td>
             <td>5:00 p.m.</td>
-            <td></td>
+            
         </tr>
         <tr>
-            <td>Wednesday</td>
+            <td>Wednesday</td> <!-- Only one row for Wednesday -->
             <td>8:00 a.m.</td>
             <td>12:00 p.m.</td>
             <td>XSL Formatting Objects</td>
         </tr>
     </table>
+    
 
 </body>
 </html>
